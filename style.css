@@ -1,0 +1,80 @@
+/* Reset CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* color: white; */
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-color: #fffbfb; */
+    /* background:lightblue; */
+    background: #edeeef;
+}
+
+/* ----------- Styling in Main Container -----------------  */
+
+.Container{
+    /* border: 1px solid red; */
+    padding: 20px;
+
+    position: relative;
+    /* top: 20%; is Not working */
+    /* left:0%; */
+    width: 340px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 15px 15px 20px rgba(0,0,0,0.1),-15px -15px 20px #fffb;
+    /* box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.733),-15px -15px 20px rgba(0, 0, 0, 0.733); */
+
+}
+
+/* ----------- Styling in Display  -----------------  */
+/* .Display{
+    /* border: 1px solid green; 
+    padding: 20px;
+
+} */
+
+/* ----------- Styling in Buttons ----------- */
+.Buttons{
+    /* border: 1px solid blue; */
+    /* padding: 20px; */
+
+    position: relative;
+    display: grid;
+    /* grid-column: span 2; */
+    /* grid-template-columns: repeat(4, auto); */
+}
+
+#value{
+    position: relative;
+    display: grid;
+
+    grid-column: span 4; /* Not Understand this */
+    /* Explain : 
+    - it is a child of button class
+    - so span is a it take 4 so 4 column may be created 
+     */
+     user-select: none;
+     overflow: hidden;
+     width: 100%;
+     text-align: end;
+     color: #5166d6;
+     height: 100px;
+     line-height: 100px;
+     box-shadow: inset 5px 5px 10px rgb(0 0 0 / 10%), inset -5px -5px 20px #fff;
+     border-radius: 20px;
+     margin-bottom: 16px;
+}
+
+
+/* ------------ Utility Classes --------------------  */
