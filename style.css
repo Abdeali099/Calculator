@@ -83,6 +83,8 @@ h3{
      padding: 0px 25px;
      font-size: 2em;
      font-weight: 500;
+    background: #edeeef;
+
      letter-spacing: 5px;
 }
 
@@ -100,7 +102,7 @@ span{
      align-items: center;
       font-weight: bolder;
       border-radius: 20px;
-      /* border: 1px solid black; */
+      border: 1px solid black;
 }
 
 span:active{
@@ -113,6 +115,8 @@ span:active{
     background: #f72f2ff5;
     color: #fff;
     border: 2px solid #bbb;
+    border: 1px solid black;
+
 }
 
 #plusbtn{
@@ -120,6 +124,8 @@ span:active{
     background: #4abf0e;
     color: #fff;
     border: 2px solid #bbb;
+    border: 1px solid black;
+
 }
 
 #equalbtn{
@@ -127,6 +133,8 @@ span:active{
     background: #2196f3;
     color: #fff;
     border: 2px solid #bbb;
+    border: 1px solid black;
+
 }
 
 /* ------------ Utility Classes --------------------  */
