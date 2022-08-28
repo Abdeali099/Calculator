@@ -23,13 +23,13 @@ body{
 /* ----------- Styling in Main Container -----------------  */
 
 .Container{
-    /* border: 1px solid red; */
+    border: 1px solid black;
     padding: 20px;
 
     position: relative;
     /* top: 20%; is Not working */
     /* left:0%; */
-    width: 340px;
+    width: 350px;
     padding: 20px;
     border-radius: 20px;
     box-shadow: 15px 15px 20px rgba(0,0,0,0.1),-15px -15px 20px #fffb;
@@ -55,7 +55,13 @@ body{
     /* grid-template-columns: repeat(4, auto); */
 }
 
+h3{
+    text-align: center;
+    margin-bottom: 17px;
+}
+
 #value{
+    border: .1px solid black;
     position: relative;
     display: grid;
 
@@ -68,13 +74,59 @@ body{
      overflow: hidden;
      width: 100%;
      text-align: end;
-     color: #5166d6;
+     /* color: #5166d6; */
      height: 100px;
      line-height: 100px;
      box-shadow: inset 5px 5px 10px rgb(0 0 0 / 10%), inset -5px -5px 20px #fff;
      border-radius: 20px;
      margin-bottom: 16px;
+     padding: 0px 25px;
+     font-size: 2em;
+     font-weight: 500;
+     letter-spacing: 5px;
 }
 
+span{
+    position: relative;
+     box-shadow:  10px 10px 20px 2px rgb(0 0 0 / 10%),-10px -10px 20px #fff;
+     padding: 10px;
+     margin: 10px;
+     font-size: 1.2em;
+     cursor: pointer;
+     user-select: none;
+     min-width: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+      font-weight: bolder;
+      border-radius: 20px;
+      /* border: 1px solid black; */
+}
+
+span:active{
+    box-shadow: inset 5px 5px 20px 2px rgb(0 0 0 / 10%),  -5px -5px 20px #fff;
+    color: red;
+}
+
+#clearbtn{
+    grid-column: span 2;
+    background: #f72f2ff5;
+    color: #fff;
+    border: 2px solid #bbb;
+}
+
+#plusbtn{
+    grid-row: span 2;
+    background: #4abf0e;
+    color: #fff;
+    border: 2px solid #bbb;
+}
+
+#equalbtn{
+    grid-row: span 2;
+    background: #2196f3;
+    color: #fff;
+    border: 2px solid #bbb;
+}
 
 /* ------------ Utility Classes --------------------  */
